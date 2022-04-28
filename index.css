@@ -24,11 +24,11 @@ body {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 90%; /* Full-width */
-    height: 25px;
-    border-radius: 10px; 
+    height: 35px;
+    border-radius: 15px; 
     background: #2e2e2e; /* Grey background */
     outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
     margin-left: 5%;
@@ -43,16 +43,16 @@ body {
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 35px; /* Set a specific slider handle width */
-    height: 35px;
+    width: 45px; /* Set a specific slider handle width */
+    height: 45px;
     border-radius: 50%; 
     background: #ff0000; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
   
   .slider::-moz-range-thumb {
-    width: 35px; /* Set a specific slider handle width */
-    height: 35px;
+    width: 45px; /* Set a specific slider handle width */
+    height: 45px;
     border-radius: 50%;
     background: #ff0000; /* Green background */
     cursor: pointer; /* Cursor on hover */
