@@ -1,10 +1,10 @@
 function change(img) {
     var x = "";
     if (img < 100 && img > 9) {
-      var x = "0";
+      x = "0";
     }
     if (img < 10) {
-      var x = "00";
+      x = "00";
     }
     var img = "img/" + x + img + ".jpg";
     document.getElementById("image").src = img;
