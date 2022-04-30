@@ -9,7 +9,17 @@ body {
 
 .year {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
     margin-left: 100px;
+    font-size: 50px;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: auto;
+  height: 60px;
 }
 
 .slidercontainer {
