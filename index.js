@@ -48,10 +48,6 @@ async function slide(key) {
   }
 }
 
-function fullscreen() {
-  document.getElementById("fullscreen").style.display = "none";
-  document.documentElement.requestFullscreen();
-}
 
 
 // Update the current slider value (each time you drag the slider handle)
