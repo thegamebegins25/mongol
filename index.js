@@ -49,17 +49,9 @@ async function slide(key) {
 }
 
 function fullscreen() {
+  document.getElementById("fullscreen").style.display = "none";
   document.documentElement.requestFullscreen();
 }
-
-document.addEventListener("fullscreenchange", function () {
-  console.log("fs");
-  if (document.fullscreenElement != null) {
-    document.getElementById("fullscreen").style.display = "none";
-  } else {
-    document.getElementById("fullscreen").style.display = "inline-block";             
-  }
-});
 
 
 // Update the current slider value (each time you drag the slider handle)
