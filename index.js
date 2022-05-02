@@ -39,7 +39,7 @@ async function slide(key) {
 
   }
   if (key.code == "ArrowLeft") {
-    for (let i=slider.value; i>yearstamps[window.slideon - 1]; i--) {
+    for (let i=slider.value; i>yearstamps[window.slideon - 1] - 1; i--) {
       slider.stepDown();
       console.log("next")
       change(i);
