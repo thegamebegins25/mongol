@@ -1,7 +1,7 @@
 const yearstamps = [1196, 1224, 1227, 1240, 1260];
 const yearstart = 1196;
 const slider = document.getElementById("slider");
-const year = document.getElementById("year");
+//const year = document.getElementById("year");
 const timer = ms => new Promise(res => setTimeout(res, ms))
 window.slideon = 0;
 
@@ -11,7 +11,7 @@ addEventListener('keydown', slide);
 
 function change(img) {
     var x = "";
-    year.textContent = img;
+    //year.textContent = img;
 
     img = parseInt(img) - yearstart;
     if (img < 100 && img > 9) {
