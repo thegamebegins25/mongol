@@ -3,6 +3,7 @@ const yearstart = 1196;
 const slider = document.getElementById("slider");
 const year = document.getElementById("year");
 const timer = ms => new Promise(res => setTimeout(res, ms))
+window.canfunc = "1";
 window.slideon = 0;
 
 
@@ -26,6 +27,10 @@ function change(img) {
 }
 
 async function slide(key) {
+  if (window.canfunc == "0") {
+    return
+  }
+  window.canfunc = "0";
   console.log(key.code);
   if (key.code == "ArrowRight") {
     for (let i=slider.value; i<yearstamps[window.slideon + 1] + 1; i++) {
@@ -47,12 +52,14 @@ async function slide(key) {
    }
    window.slideon--;
   }
+  window.canfunc = "1";
 }
 
 
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
+
   console.log("SliderInput:" + this.value);
   change(this.value); 
 }
