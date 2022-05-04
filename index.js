@@ -31,7 +31,7 @@ async function slide(key) {
     return
   }
   window.canfunc = "0";
-  alert(key.code);
+  console.log(key.code);
   if (key.code == "KeyT") {
     slider.stepUp();
     change(slider.value);
