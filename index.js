@@ -32,6 +32,14 @@ async function slide(key) {
   }
   window.canfunc = "0";
   console.log(key.code);
+  if (key.code == "KeyT") {
+    slider.stepUp();
+    change(slider.value);
+  }
+  if (key.code == "KeyR") {
+    slider.stepDown();
+    change(slider.value);
+  }
   if (key.code == "ArrowRight") {
     for (let i=slider.value; i<yearstamps[window.slideon + 1] + 1; i++) {
       slider.stepUp();
