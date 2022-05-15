@@ -1,18 +1,18 @@
 .image {
-    width: 100%;
-    height: auto;
+    background-color: white;
+    width: auto;
+    height: 100vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 body {
     background-color: black;
 }
 
-.year {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    margin-left: 100px;
-    font-size: 50px;
-}
+
 
 .fullscreen {
   position: fixed;
@@ -22,48 +22,72 @@ body {
   height: 60px;
 }
 
+.topcontainer {
+  position: fixed;
+  left: 8%;
+}
+
+.year {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin-top: 2%;
+  font-size: 100px;
+  display: inline-block;
+}
+
+.info {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin-top: 1%;
+  font-size: 50px;
+  display: inline-block;
+}
+
+
+
+
 .slidercontainer {
     width: 100%; /* Width of the outside container */
     position: fixed;
     bottom: 20px;
 
-  }
+}
   
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 90%; /* Full-width */
-    height: 35px;
-    border-radius: 15px; 
-    background: #2e2e2e; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-    margin-left: 5%;
-  }
-  
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 45px; /* Set a specific slider handle width */
-    height: 45px;
-    border-radius: 50%; 
-    background: #ff0000; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 45px; /* Set a specific slider handle width */
-    height: 45px;
-    border-radius: 50%;
-    background: #ff0000; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 90%; /* Full-width */
+  height: 35px;
+  border-radius: 15px; 
+  background: #2e2e2e; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin-left: 5%;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 45px; /* Set a specific slider handle width */
+  height: 45px;
+  border-radius: 50%; 
+  background: #ff0000; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 45px; /* Set a specific slider handle width */
+  height: 45px;
+  border-radius: 50%;
+  background: #ff0000; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
