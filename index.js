@@ -30,7 +30,7 @@ addEventListener('keydown', slide);
 function change(img) {
     var x = "";
     year.textContent = img;
-    info.innerHTML = "&nbsp;&nbsp;Great Khan: " + khans[khanyears[img]] + " Khan";
+    info.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Great Khan: " + khans[khanyears[img]] + " Khan";
     img = parseInt(img) - yearstart;
   
     var img = "img/Mongol_Empire-" + x + img + ".png";
