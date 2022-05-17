@@ -23,7 +23,7 @@ body {
 }
 
 .topcontainer {
-  position: fixed;
+  position: absolute;
   left: 8%;
 }
 

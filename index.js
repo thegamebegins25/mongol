@@ -1,5 +1,5 @@
-const yearstamps = [1200, 1224, 1227, 1240, 1260];
-const khans = ["Genghis", "lol", "test"];
+const yearstamps = [1200, 1219, 1227, 1230, 1234, 1241, 1242, 1261, 1272];
+const khans = ["Genghis", "&#214;godei", "Mongke", "Kublai"];
 var khanyears = {}
 const yearstart = 1200;
 const slider = document.getElementById("slider");
@@ -10,16 +10,20 @@ window.canfunc = "1";
 window.slideon = 0;
 
 //genghis
-for (var i = 1200; i <= 1220; i++) {
+for (var i = 1200; i <= 1227; i++) {
   khanyears[i] = 0;
 }
-//2
-for (var i = 1221; i <= 1240; i++) {
+//ogodei
+for (var i = 1228; i <= 1242; i++) {
   khanyears[i] = 1;
 }
-//3
-for (var i = 1241; i <= 1272; i++) {
+//mongke
+for (var i = 1243; i <= 1261; i++) {
   khanyears[i] = 2;
+}
+//kublai
+for (var i = 1262; i <= 1272; i++) {
+  khanyears[i] = 3;
 }
 console.log(khanyears);
 
@@ -30,7 +34,7 @@ addEventListener('keydown', slide);
 function change(img) {
     var x = "";
     year.textContent = img;
-    info.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Great Khan: " + khans[khanyears[img]] + " Khan";
+    info.innerHTML = "&nbsp;&nbsp;Great Khan: " + khans[khanyears[img]] + " Khan";
     img = parseInt(img) - yearstart;
   
     var img = "img/Mongol_Empire-" + x + img + ".png";
