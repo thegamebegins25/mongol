@@ -1,4 +1,4 @@
-const yearstamps = [1200, 1219, 1227, 1230, 1234, 1241, 1242, 1261, 1272];
+const yearstamps = [1200, 1219, 1227, 1230, 1234, 1241, 1242, 1261, 1271];
 const khans = ["Genghis", "&#214;godei", "Mongke", "Kublai"];
 var khanyears = {}
 const yearstart = 1200;
