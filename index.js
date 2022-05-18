@@ -27,7 +27,6 @@ for (var i = 1262; i <= 1272; i++) {
 }
 console.log(khanyears);
 
-
 addEventListener('keydown', slide);
 
 function change(img) {
