@@ -1,4 +1,4 @@
-const yearstamps = [1200, 1219, 1227, 1230, 1234, 1241, 1242, 1261, 1271];
+const yearstamps = [1200, 1219, 1227, 1230, 1234, 1241, 1242, 1261, 1272];
 const khans = ["Genghis", "&#214;godei", "Mongke", "Kublai"];
 var khanyears = {}
 const yearstart = 1200;
@@ -57,7 +57,7 @@ async function slide(key) {
   }
   if (key.code == "ArrowRight" && yearstamps[window.slideon + 1] != undefined) {
     for (let i=slider.value; i<yearstamps[window.slideon + 1] + 1; i++) {
-      slider.stepUp();
+      slider.value = i;
       console.log("next")
       change(i);
       await timer(50)
@@ -68,7 +68,7 @@ async function slide(key) {
   }
   if (key.code == "ArrowLeft" && yearstamps[window.slideon - 1] != undefined) {
     for (let i=slider.value; i>yearstamps[window.slideon - 1] - 1; i--) {
-      slider.stepDown();
+      slider.value = i;
       console.log("next")
       change(i);
       await timer(50)
